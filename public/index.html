@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>After School Classes</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <ul class="navbar">
+                <li style="float:left"><h1>{{sitename}}</h1></li>
+                <li>
+                    <button @click='showLessons'></span>{{lessonsNavButton}}</button>
+                    <button @click='showUser'></span>{{userNavButton}}</button>
+                </li>
+            </ul>
+            <main>
+                <h1 id="classesPageTitle">Classes</h1>
+                <div v-for="lesson in lessons" class="card">
+                    <h2 v-text ="lesson.subject"></h2>
+                    <figure>
+                        <img v-bind:src="lesson.image">
+                    </figure>
+                    <p>Location: {{lesson.location}}</p>
+                    <p>Price: £{{lesson.price}}</p>
+                    <p>Description: {{lesson.description}}</p>
+                    <p>Maximum Class Size: {{lesson.maximumSpaces}} People</p>             
+                </div>
+            </main>
+        </div>
+    </body>
+    <script src="store.js"></script>
+</html>
