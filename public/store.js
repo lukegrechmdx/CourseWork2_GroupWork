@@ -7,6 +7,7 @@ var webstore = new Vue({
         lessons: [],
     },  
     methods: {
+        //Navigating to lessons 'GET' route
         showLessons: function(){
             window.location.href = "/lessons";
         },
