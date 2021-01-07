@@ -11,6 +11,7 @@ var webstore = new Vue({
         showLessons: function(){
             window.location.href = "/lessons";
         },
+        //Navigating to user 'GET' route
         showUser: function(){
             window.location.href = "/user";
         },
