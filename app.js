@@ -8,7 +8,8 @@ app.use(express.static('public'));
 app.get('/', function (req, res) {
     res.send('Hello World!');
 });
-  
+
+//'GET' route to return lesson data
 app.get('/lessons', function (req, res) {
     res.json(lessonsData);
 });
