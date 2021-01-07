@@ -1,5 +1,7 @@
 let express = require('express');
 let app = express();
+
+//JSON files with lesson and user data
 const lessonsData = require('./public/lessons.json');
 const userData = require('./public/user.json');
 
