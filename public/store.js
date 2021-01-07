@@ -24,6 +24,7 @@ var webstore = new Vue({
         this.fetchData();
     },
     computed: {     
+        //Fetch function
         async fetchData() {
             fetch('http://localhost:4000/lessons').then(
             function (response) {
