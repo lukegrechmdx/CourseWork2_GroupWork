@@ -14,6 +14,7 @@ app.get('/lessons', function (req, res) {
     res.json(lessonsData);
 });
 
+//'GET' route to return user data
 app.get('/user', function (req, res) {
     res.json(userData);
 });
